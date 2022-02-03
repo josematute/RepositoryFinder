@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 function Navbar({ title }) {
 	return (
-		<nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
+		<nav className="navbar mb-12 shadow-lg bg-neutral text-bg-primary">
 			<div className="container mx-auto">
 				<div className="flex-none px-2 mx-2">
 					<FaGithub className="inline pr-2 text-3xl" />
@@ -29,7 +29,7 @@ function Navbar({ title }) {
 }
 
 Navbar.defaultProps = {
-	title: "Github Finder"
+	title: "Repository Finder"
 }
 
 Navbar.propTypes = {

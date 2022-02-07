@@ -1,6 +1,7 @@
 import { useState, useContext } from "react"
 import GithubContext from "../../context/github/GithubContext"
 import AlertContext from "../../context/alert/AlertContext"
+import { FaSearch, FaEraser } from "react-icons/fa"
 
 function UserSearch() {
 	const [text, setText] = useState("")
@@ -37,7 +38,8 @@ function UserSearch() {
 								type="submit"
 								className="absolute top-0 right-0 rounded-l-none w-36 btn btn-lg"
 								defaultValue={true}>
-								Go
+								Go{" "}
+								<FaSearch className="inline pr-2 text-2xl ml-2" />
 							</button>
 						</div>
 					</div>
@@ -48,7 +50,7 @@ function UserSearch() {
 					<button
 						className="btn btn-ghost btn-large"
 						onClick={clearUsers}>
-						Clear
+						Clear <FaEraser className="inline pr-2 text-2xl ml-2" />
 					</button>
 				</div>
 			)}

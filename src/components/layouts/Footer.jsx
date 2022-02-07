@@ -1,8 +1,6 @@
 import { FaReact } from "react-icons/fa"
 
 function Footer() {
-	const footerYear = new Date().getFullYear()
-
 	return (
 		<footer className="footer p-10 bg-neutral footer-center text-bg-primary">
 			<div className="">

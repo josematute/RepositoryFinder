@@ -61,7 +61,7 @@ function User() {
 					<div className="custom-card-image mb-6 md:mb-0">
 						<div className="rounded-lg card image-full">
 							<figure>
-								<img src={avatar_url} alt="Avatar Picture" />
+								<img src={avatar_url} alt="Avatar" />
 							</figure>
 							<div className="card-body justify-end">
 								<h2 className="card-title mb-0">{name}</h2>
